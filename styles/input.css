@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		font-family: 'Avenir LT std';
+		@apply text-white;
+	}
+	.navlink {
+		@apply text-[1.5rem] text-[#BFBDBD] mx-6 duration-75;
+	}
+	.active-navlink {
+		@apply text-[1.5rem] text-white border-b border-white mx-6 duration-75;
+	}
+	.navbtn {
+		@apply h-6 w-12 bg-[#BFBDBD] rounded-full duration-200;
+	}
+	.active-navbtn {
+		@apply h-6 w-24 bg-white rounded-full duration-200;
+	}
+}
+
+@layer components {
+	.scroll-container {
+		@apply h-screen w-full snap-mandatory snap-y snap-always overscroll-y-contain overflow-y-auto scrollbar-hide scroll-smooth;
+	}
+	.scroll-element {
+		@apply h-screen w-full bg-slate-200 snap-center relative;
+	}
+	.hero-bg {
+		background: rgb(255, 255, 255);
+		background: radial-gradient(
+			circle,
+			rgba(255, 255, 255, 0.05) 0%,
+			rgba(20, 20, 20, 0) 100%
+		);
+	}
+	.btn {
+		@apply absolute left-1/2 bottom-12 -translate-x-1/2 z-30 bg-[#E4E4E4] text-black font-bold text-[1.5rem] px-6 py-2 rounded-full outline-none duration-200;
+	}
+	.btn-active {
+		@apply btn bg-[#c2c2c2] scale-90;
+	}
+	.modal {
+		@apply opacity-0 duration-200 z-30;
+	}
+	.active-modal {
+		@apply opacity-100 duration-200;
+	}
+}
+
+@font-face {
+	font-family: 'Avenir LT std';
+	src: url('../public/font/avenir_ff/AvenirLTStd-Book.otf') format('opentype');
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: 'Avenir LT std';
+	src: url('../public/font/avenir_ff/AvenirLTStd-Roman.otf') format('opentype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Avenir LT std';
+	src: url('../public/font/avenir_ff/AvenirLTStd-Black.otf') format('opentype');
+	font-weight: bold;
+}
