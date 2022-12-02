@@ -13,9 +13,9 @@ function SecondSection() {
 		} else {
 			current = event.target.parentNode
 		}
-		let currentClass = current.nextSibling.className
+		let modalOfCurrent = current.nextSibling.className
 
-		if (currentClass !== 'active-modal') {
+		if (modalOfCurrent !== 'active-modal') {
 			for (let i = 2; i < current.parentNode.children.length; i = i + 2) {
 				current.parentNode.children[i].className = 'modal'
 			}

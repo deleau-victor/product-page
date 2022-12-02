@@ -59,17 +59,17 @@ function Navbar() {
 						</a>
 					</li>
 					<li className="navlink" id={'2'}>
-						<a href="#" onClick={handleActiveSection}>
+						<a href="#third" onClick={handleActiveSection}>
 							Design
 						</a>
 					</li>
 					<li className="navlink" id={'3'}>
-						<a href="#" onClick={handleActiveSection}>
+						<a href="#fourth" onClick={handleActiveSection}>
 							Accessoire
 						</a>
 					</li>
 					<li className="navlink" id={'4'}>
-						<a href="#" onClick={handleActiveSection}>
+						<a href="#fifth" onClick={handleActiveSection}>
 							Gallerie
 						</a>
 					</li>
@@ -99,19 +99,19 @@ function Navbar() {
 						id={'1'}
 					></a>
 					<a
-						href="#"
+						href="#third"
 						className="navbtn"
 						onClick={handleActiveSectionBtn}
 						id={'2'}
 					></a>
 					<a
-						href="#"
+						href="#fourth"
 						className="navbtn"
 						onClick={handleActiveSectionBtn}
 						id={'3'}
 					></a>
 					<a
-						href="#"
+						href="#fifth"
 						className="navbtn"
 						onClick={handleActiveSectionBtn}
 						id={'4'}
