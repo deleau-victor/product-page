@@ -48,6 +48,9 @@
 	.active-modal {
 		@apply opacity-100 duration-200;
 	}
+	.gallery-element {
+		@apply w-full h-full relative rounded-3xl overflow-hidden;
+	}
 }
 
 @font-face {
